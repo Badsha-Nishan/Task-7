@@ -2,6 +2,7 @@
 
 :root {
   --primary-color: #3a3a3a;
+  --btn-color: #e02c6d;
 }
 * {
   margin: 0;
@@ -9,6 +10,17 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-size: 62.5%;
+}
+
+.btn-primary {
+  background-color: var(--btn-color);
+  border-radius: 41px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  cursor: pointer;
 }
 
 /* Nav Section */
@@ -75,9 +87,158 @@ ul li a i {
   line-height: 70px;
 }
 
+.hero-image {
+  width: 100%;
+  max-width: 475px;
+  height: 475px;
+  background: url(./images/Circle\ design.svg) no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: cover;
+  margin-bottom: 100px;
+}
+
+.hero-image img {
+  max-width: 440px;
+  height: 414px;
+  width: 100%;
+}
+
+/* Sponsors Section */
+
+.icons {
+  max-width: 1110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.icons img {
+  max-width: 202px;
+}
+
+/* Product Section */
+
+.product {
+  margin-bottom: 100px;
+}
+
+.product-title {
+  color: var(--primary-color);
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.card-section {
+  max-width: 1047px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.cards {
+  border-radius: 8px;
+  max-width: 329px;
+  padding: 17px 14px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.187);
+}
+
+.cards img {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.card-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #18191f;
+  margin-bottom: 6px;
+}
+
+.price {
+  font-size: 2.4rem;
+  color: #00000087;
+}
+
+.card-description {
+  font-size: 1.4rem;
+  color: #787885;
+  font-weight: bold;
+}
+
+.rating {
+  font-size: 1.4rem;
+  color: #fb8200;
+}
+.rating span {
+  font-size: 1.4rem;
+  color: #5e6366;
+  font-weight: bold;
+}
+
+.arrow a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #e02c6d87;
+  margin-left: 1100px;
+}
+.arrow span {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 5px;
+  transition: all 0.4s;
+}
+.arrow:hover span {
+  margin-left: 15px;
+}
 @media screen and (max-width: 576px) {
   ul {
     flex-direction: column;
     margin-top: 10px;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero-content {
+    max-width: 390px;
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+  }
+
+  .hero-title {
+    font-size: 3.2rem;
+    line-height: 34px;
+  }
+
+  .hero-image {
+    background-position: center;
+  }
+
+  .icons {
+    flex-direction: column;
+  }
+  .icons img {
+    max-width: 430px;
+    margin-bottom: 20px;
+  }
+  .card-section {
+    grid-template-columns: 1fr;
+  }
+  .arrow a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #e02c6d87;
+    margin-left: 300px;
   }
 }
