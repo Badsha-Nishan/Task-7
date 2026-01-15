@@ -206,10 +206,10 @@ ul li a i {
   align-items: center;
 }
 
-.feature-img{
+.feature-img {
   max-width: 404px;
 }
-.feature-img img{
+.feature-img img {
   width: 100%;
 }
 .feature-content h2 {
@@ -226,6 +226,15 @@ ul li a i {
   line-height: 28px;
   margin-bottom: 16px;
   max-width: 500px;
+}
+
+/* Footer Section */
+
+.back {
+  background-color: #0a0826;
+  max-width: 1440px;
+  height: 240px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 576px) {
   ul {
